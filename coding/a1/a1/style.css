@@ -1,3 +1,10 @@
 body {
-    background-color: aquamarine;
+    background-color: rgb(255, 242, 127);
+}
+
+<!-- HTML -->
+<h1>This heading's font should be 16px</h1>
+/* CSS */
+h1 {
+  font-size: 16px;
 }
