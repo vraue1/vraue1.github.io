@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Downloads/HTML-Worksheet"
+		},
+		{
+			"path": "../../../Downloads/CSS-Worksheet"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CSS-Worksheet"
+	}
+}

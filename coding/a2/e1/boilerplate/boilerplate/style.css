@@ -1,0 +1,117 @@
+/* 
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{  
+    --col01: rgb(red)(0,0,0);
+    --col02: rgb(green) (76, 76, 76);
+    --col03: rgb(blue) (173, 173, 173);
+    --border: 10px solid var(--col02);
+}
+
+background-image:linearGradient (red, green, )
+
+border-style: inset;
+
+
+/* (write a few comments about my css) */
+
+
+.container{
+
+
+margin: auto;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 50%; 
+  gap: 33px 15px; 
+  width: 100vh;
+  height: 100vh;
+  justify-content: stretch;  
+  align-content: space-around;    
+
+
+}
+
+#one{
+    background-color: brown;
+    grid-column: 1/6;
+    grid-row: 2/3;
+    border-top-style: ridge;
+    border-bottom-style: ridge;
+    border-left-style: ridge;
+    border-right-style: ridge;
+    border-radius: 10%;
+    border-color:bisque;
+    border-width: 5mm;
+    text-align: center;
+}
+#two{
+    background-color: brown;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 250px;
+    border-top-style: ridge;
+    border-bottom-style: ridge;
+    border-left-style: ridge;
+    border-right-style: ridge;
+    border-radius: 10%;
+    border-color: bisque;
+    border-width: 2mm;
+}
+#three{
+    background-color: brown;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border-top-style: ridge;
+    border-bottom-style: ridge;
+    border-left-style: ridge;
+    border-right-style: ridge;
+    border-radius: 10%;
+    border-color: bisque;
+    border-width: 2mm;
+}
+#four{
+    background-color: brown;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    height: 250px;
+    border-top-style: ridge;
+    border-bottom-style: ridge;
+    border-left-style: ridge;
+    border-right-style: ridge;
+    border-radius: 10%;
+    border-color: bisque;
+    border-width: 2mm;
+}
+#five{
+    background-color:brown;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    border-top-style: ridge;
+    border-bottom-style: ridge;
+    border-left-style: ridge;
+    border-right-style: ridge;
+    border-radius: 10%;
+    border-color: bisque;
+    border-width: 2mm;
+}
+#six{
+    background-color: brown;
+    grid-column: 5/6;
+    grid-row: 1/2;
+    height: 250px;
+    border-top-style: ridge;
+    border-bottom-style: ridge;
+    border-left-style: ridge;
+    border-right-style: ridge;
+    border-radius: 10%;
+    border-color: bisque;
+    border-width: 2mm;
+
+}
+
