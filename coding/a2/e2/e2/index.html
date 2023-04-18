@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="./filter.js" defer></script>
+    <script src="./arrays-&-for-loops.js" defer></script>
+
+    <title>exercise 2</title>
+
+  </head>
+
+  <body>
+
+
+
+    <hr /> 
+
+    <div class="FilterSection">    
+      
+      
+
+      I redesigned this webpage based on the idea of simplicity. In my experience on recipe websites there is a chaotic amount of information.
+      I wanted to keep this webpage minimal and uncluttered with only information that I believe is necessary to determine before you cook something and to help you decide what you want to cook. I think you’d generally need to know the length of time it takes to make and the quantity, as well as the dietary label.
+      
+      The information is displayed through sizing and spacing that does not take too long to scroll to the bottom but also allows the user the discrete action of scrolling and clicking so that they’re engaged. The colours contrast and stand out clearly against the clean white backdrop for simplicity and aesthetic pleasure. The link to each recipe stands out clearly as this is where the user will need the most obvious direction to if they select a recipe. The specific categories in the filter were chosen to streamline the user’s selection process in a way that tailors to a wide and general population. The filters were separated into main meals and desserts as a user will probably already know which of these they want to navigate to prior. Dietary selection is highly relevant as people also know prior to browsing whether they are interested in a meat based or vegetarian recipe and searching based on their own dietary requirements removes unnecessary scrolling for them. Cuisine is based on interest and is filtered to navigate for more flavour profile based navigation.
+      
+
+      <details class="FilterBox">
+        <summary>MEAL LIST</summary>
+        <button class="FilterButton" onclick='filterCategory("Cap", this)'>CAPRESE SALAD</button>
+        <button class="FilterButton" onclick='filterCategory("Put", this)'>PUTANESCA</button>
+        <button class="FilterButton" onclick='filterCategory("Eno", this)'>ENOKI AND ONION FRITTERS</button>
+        <button class="FilterButton" onclick='filterCategory("Grill", this)'>GRILLED CHEESE WITH KIMCHI</button>
+        <button class="FilterButton" onclick='filterCategory("Pork", this)'>PORK AND BEANS</button>
+        <button class="FilterButton" onclick='filterCategory("Kim", this)'>KIMCHI PANCAKE</button>
+        <button class="FilterButton" onclick='filterCategory("Shak", this)'>SHAKSHUKA</button>
+        <button class="FilterButton" onclick='filterCategory("Caul", this)'>CAULIFLOWER SPAGHETTI</button>
+        <button class="FilterButton" onclick='filterCategory("Kor", this)'>KOREAN FRIED CHICKEN</button>
+        <button class="FilterButton" onclick='filterCategory("Beef", this)'>BEEF STROGANOFF</button>
+        <button class="FilterButton" onclick='filterCategory("Mush", this)'>MUSHROOM CARBONARA</button>
+
+      </details>
+
+      <details class="FilterBox">
+        <summary>DESSERT LIST</summary>
+        <button class="FilterButton" onclick='filterCategory("Fluff", this)'>FLUFFY STEAMED BUNS</button>
+        <button class="FilterButton" onclick='filterCategory("Choc", this)'>CHOCOLATE CHIP COOKIES</button>
+        <button class="FilterButton" onclick='filterCategory("Brown", this)'>BROWN BUTTER PEAR TART</button>
+
+
+      </details>
+
+
+      <details class="FilterBox">
+        <summary>DIETARY</summary>
+        <button class="FilterButton" onclick='filterCategory("KLA", this)'>MEAT DISHES</button>
+        <button class="FilterButton" onclick='filterCategory("M", this)'>VEGETARIAN</button>
+
+
+      </details>
+
+      <details class="FilterBox">
+        <summary>CUISINE</summary>
+        <button class="FilterButton" onclick='filterCategory("EAST", this)'>EAST</button>
+        <button class="FilterButton" onclick='filterCategory("WEST", this)'>WEST</button>
+
+
+      </details>
+
+    </div>
+
+    <hr /> 
+
+    <!-- Recipe 1 -->
+    <div class="RecipeBox WEST M Put">
+
+      <!-- don't forget to change out <div>s for the most appropriate element -->
+      <!-- i'll give you one for free - you should change the URL into an <a> tag, don't forget to add the appropriate attributes so it works as a link -->
+      
+      <div class="RecipeName">Baked Puttanesca Risotto with Olives, Lemon and Parsley</div>
+
+      
+      <!-- the RecipeImageContainer is actually fine to be left as a <div> - like the RecipeBox we're using it as a container for other elements -->
+      <div class="RecipeImageContainer">
+
+        <img class="RecipeImg" src="./images/Puttanesca.jpg" alt="bowl of puttanesca pasta" />
+
+
+
+      </div>
+
+      <a class="RecipeLink" href="https://www.abc.net.au/everyday/baked-puttanesca-risotto-with-tomato-olives-lemon-parsley-recipe/11270338">GO TO RECIPE</a>
+
+
+      <div class="TimeToCook">Time: 10 mins prep, 30 mins to cook</div>
+
+      <div class="Servings">Servings: 4 to 6</div>
+
+      <div class="Dietary">Dietary: Vegetarian</div>
+
+      <div style="margin-top:50px;">
+
+    </div>
+    
+    <!-- Recipe 2 -->
+    <div class="RecipeBox WEST M Cap">
+
+
+      <div class="RecipeName">Caprese Salad with Slow-Roasted Tomatoes, Rocket and Basil Gremolata</div>
+
+
+      <div class="RecipeImageContainer">
+
+        <img class="RecipeImg" src="./images/Caprese.jpg" alt="plate of caprese salad" />
+
+
+      </div>
+
+      <a class="RecipeLink" href="https://www.abc.net.au/everyday/caprese-salad-slow-roasted-tomato-rocket-basil-gremolata-recipe/10776846">GO TO RECIPE</a>
+
+      <div class="TimeToCook">Time: 75 - 105 mins</div>
+
+      <div class="Servings">Servings: 4-6 </div>
+
+      <div class="Dietary">Dietary: Vegetarian</div>
+
+      <div style="margin-top:50px;">
+
+    </div>
+    
+    <!-- Recipe 3 -->
+    <div class="RecipeBox EAST M Eno">
+
+      <div class="RecipeName">Crispy Enoki and Onion Fritters with Thai Curry Mayo</div>
+
+      <div class="RecipeImageContainer">
+
+        <img class="RecipeImg" src="./images/Enoki.jpg" alt="enoki mushrooms" />
+
+
+
+      </div>
+
+      <a class="RecipeLink" href="https://www.seriouseats.com/crispy-enoki-and-onion-fritter-with-thai-curry-mayo-recipe">GO TO RECIPE</a>
+
+      <div class="TimeToCook">Time to Cook: 30 mins</div>
+
+      <div class="Servings">Servings: 4 to 6</div>
+
+      <div class="Dietary">Dietary: Vegetarian</div>
+
+      <div style="margin-top:50px;"></div>
+
+    </div>
+    
+    <!-- Recipe 4 -->
+    <div class="RecipeBox EAST M Fluff">
+
+
+      <div class="RecipeName">Fluffy Steamed Buns filled with Sweet Red Beans</div>
+
+
+      <div class="RecipeImageContainer">
+
+        <img class="RecipeImg" src="./images/Red_Bean_Bun.jpg" alt="ripped open steamed bun with red bean paste" />
+
+
+      </div>
+
+      <a class="RecipeLink" href="https://www.maangchi.com/recipe/jjinppang">GO TO RECIPE</a>
+
+      <div class="TimeToCook">Time to Cook: 11 hours prep, 15 mins cook</div>
+
+      <div class="Servings">Servings: 10 pieces</div>
+
+      <div class="Dietary">Dietary: Vegetarian</div>
+
+      <div style="margin-top:50px;">
+
+    </div>
+    
+    <!-- Recipe 5 -->
+    <div class="RecipeBox WEST M Choc">
+
+      <div class="RecipeName">The Food Lab's Chocolate Chip Cookies</div>
+
+      <div class="RecipeImageContainer">
+
+        <img class="RecipeImg" src="./images/Cookies.jpg" alt="plate of chocolate chip cookies" />
+
+
+      </div>
+
+      <a class="RecipeLink" href="https://www.seriouseats.com/the-food-lab-best-chocolate-chip-cookie-recipe">GO TO RECIPE</a>
+
+      <div class="TimeToCook">Time to Cook: 45 mins prep, 35 mins to cook</div>
+
+      <div class="Servings">Servings: 28 cookies</div>
+
+      <div class="Dietary">Dietary: Vegetarian</div>
+
+      <div style="margin-top:50px;">
+
+
+
+    </div>
+    
+    <!-- Recipe 6 -->
+    <div class="RecipeBox WEST M Grill">
+
+
+      <div class="RecipeName">Grilled Cheese With Kimchi Recipe</div>
+
+      <div class="RecipeImageContainer">
+
+        <img class="RecipeImg" src="./images/Grilled_Cheese.jpg" alt="grilled cheese sandwich with pickles" />
+
+
+      </div>
+
+      <a class="RecipeLink" href="https://www.seriouseats.com/grilled-cheese-with-kimchi-recipe">GO TO RECIPE</a>
+
+      <div class="TimeToCook">Time to Cook: 12 mins</div>
+
+      <div class="Servings">Servings: 1</div>
+
+      <div class="Dietary">Dietary: Vegetarian</div>
+
+      <div style="margin-top:50px;">
+
+
+    </div>
+    
+    <!-- Recipe 7 -->
+    <div class="RecipeBox WEST KLA Pork">
+
+      <div class="RecipeName">Hands-Off Pork and Beans</div>
+
+      <div class="RecipeImageContainer">
+
+        <img class="RecipeImg" src="./images/Pork_Beans.jpg" alt="pot of pork and beans" />
+
+
+
+      </div>
+
+
+      <a class="RecipeLink" href="https://www.patreon.com/posts/recipe-hands-off-60369279">GO TO RECIPE</a>
+
+
+      <div class="TimeToCook">Time to Cook: overnight prep, 4 hours to cook</div>
+
+      <div class="Servings">Servings: 6 generous servings</div>
+
+      <div class="Dietary">Dietary: Meat based</div>
+
+      <div style="margin-top:50px;">
+
+    </div>
+    
+    <!-- Recipe 8 -->
+    <div class="RecipeBox EAST M Kim">
+
+
+      <div class="RecipeName">Kimchi Pancake</div>
+
+      <div class="RecipeImageContainer">
+
+        <img class="RecipeImg" src="./images/Kimchi_Pancake.jpg" alt="kimchi pancake with bowl of dipping sauce" />
+
+      </div>
+
+      <a class="RecipeLink" href="https://www.maangchi.com/recipe/kimchijeon">GO TO RECIPE</a>
+
+      <div class="TimeToCook">Time to Cook: 15mins</div>
+
+      <div class="Servings">Servings: 8 slices</div>
+
+      <div class="Dietary">Dietary: Vegetarian</div>
+      
+      <div style="margin-top:50px;">
+
+
+    </div>
+    
+    <!-- Recipe 9 -->
+    <div class="RecipeBox EAST M Shak">
+
+
+      <div class="RecipeName">Shakshuka (North African style Poached Eggs in Spicy Tomato Sauce)</div>
+
+
+      <div class="RecipeImageContainer">
+
+        <img class="RecipeImg" src="./images/Shakshuka.jpg" alt="pan filled with shakshuka" />
+
+
+      </div>
+
+      
+      <a class="RecipeLink" href="https://www.seriouseats.com/shakshuka-north-african-shirred-eggs-tomato-pepper-recipe">GO TO RECIPE</a>
+
+      <div class="TimeToCook">Time to Cook: 35 mins</div>
+
+      <div class="Servings">Servings: 4 to 6</div>
+
+      <div class="Dietary">Dietary: Vegetarian</div>
+
+      <div style="margin-top:50px;">
+
+    </div>
+    
+    <!-- Recipe 10 -->
+    <div class="RecipeBox WEST M Caul">
+
+
+      <div class="RecipeName">Spaghetti with Melted Cauliflower Sauce</div>
+
+      <div class="RecipeImageContainer">
+
+        <img class="RecipeImg" src="./images/Cauliflower_Spaghetti.jpg" alt="bowl of spaghettie with cauliflower sauce" />
+
+
+      </div>
+
+      <a class="RecipeLink" href="https://www.patreon.com/posts/pasta-with-sauce-45042575">GO TO RECIPE</a>
+
+      <div class="TimeToCook">Time to Cook: 1 hour and 10 mins</div>
+
+      <div class="Servings">Servings: 4 servings</div>
+
+      <div class="Dietary">Dietary: Vegetarian</div>
+      
+      <div style="margin-top:50px;">
+
+
+    </div>
+    
+    <!-- Recipe 11 -->
+    <div class="RecipeBox EAST KLA Kor">
+
+
+      <div class="RecipeName">Sweet, Sour, & Spicy Korean Fried Chicken</div>
+
+      <div class="RecipeImageContainer">
+
+        <img class="RecipeImg" src="./images/Korean_Fried_Chicken.jpg" alt="plate of fried chicken with pickles and kimchi" />
+
+
+      </div>
+
+      <a class="RecipeLink" href="https://www.maangchi.com/recipe/yangnyeom-tongdak">GO TO RECIPE</a>
+
+      <div class="TimeToCook">Time to Cook: 45-50 minutes</div>
+
+      <div class="Servings">Servings: 3 to 4</div>
+
+      <div class="Dietary">Dietary: Meat based</div>
+      
+      <div style="margin-top:50px;">
+
+
+    </div>
+    
+    <!-- Recipe 12 -->
+    <div class="RecipeBox WEST KLA Beef">
+
+      <div class="RecipeName">The Ultimate Beef Stroganoff Recipe</div>
+
+      <div class="RecipeImageContainer">
+
+        <img class="RecipeImg" src="./images/Stroganoff.jpg" alt="bowl of beef stroganoff pasta" />
+
+
+      </div>
+
+      <a class="RecipeLink" href="https://www.seriouseats.com/ultimate-beef-stroganof-recipe">GO TO RECIPE</a>
+
+      <div class="TimeToCook">Time to Cook: 55 mins</div>
+
+      <div class="Servings">Servings: 4 servings</div>
+
+      <div class="Dietary">Dietary: Meat based</div>
+      
+      <div style="margin-top:50px;">
+
+    </div>
+    
+    <!-- Recipe 13 -->
+    <div class="RecipeBox WEST CLM M Brown">
+
+      <div class="RecipeName">Vanilla-Brown Butter Pear Tart</div>
+
+      <div class="RecipeImageContainer">
+
+        <img class="RecipeImg" src="./images/Pear_Tart.jpg" alt="pear tart on a table" />
+
+
+      </div>
+
+      <a class="RecipeLink" href="https://www.patreon.com/posts/recipe-vanilla-60100711">GO TO RECIPE</a>
+
+      <div class="TimeToCook">Time to Cook: 3 hours</div>
+
+      <div class="Servings">Servings: 8 servings</div>
+
+      <div class="Dietary">Dietary: Vegetarian</div>
+      
+      <div style="margin-top:50px;">
+
+    </div>
+
+    <!-- Recipe 14 -->
+    <div class="RecipeBox WEST M Mush">
+
+      <div class="RecipeName">Vegetarian Carbonara with Mushrooms, Miso and Parmesan</div>
+
+      <div class="RecipeImageContainer">
+
+        <img class="RecipeImg" src="./images/Mushroom_Carbonara.jpg" alt="pan filled with mushroom carbonara pasta" />
+
+
+      </div>
+
+      <a class="RecipeLink" href="https://www.abc.net.au/everyday/vegetarian-carbonara-with-mushrooms-and-miso/12426392">GO TO RECIPE</a>
+
+      <div class="TimeToCook">Time to Cook: 15 mins prep, 15 mins cook</div>
+
+      <div class="Servings">Servings: 4</div>
+
+      <div class="Dietary">Dietary: Vegetarian</div>
+      
+      <div style="margin-top:50px;">
+
+    </div>
+
+    </section>
+
+  </body>
+
+</html>

@@ -1,0 +1,109 @@
+/* z-index order */
+
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 8;
+}
+
+/* Basis for colour palette comes from 1bit Monitor Glow Palette by Polyducks */
+/* https://lospec.com/palette-list/1bit-monitor-glow */
+/* you're welcome to change the colours if you want or any of the other general page style */
+:root{
+  --col-01:#ffffff;
+  --col-02:#000000;
+  --col-03:#ff3c00;
+  --col-04:#b6e878;
+  --border: 1px solid var(--col-02);
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--col-01);
+  color: var(--col-02);
+  padding: 2vw;
+}
+
+/*
+  i've set up a basic flexbox for each recipe container - you might want to change some of the 
+  flex properties here on the container or on the individual flex items depending on how you want to style them
+*/
+.RecipeBox{
+  display: flex;
+  flex-direction: column;
+  border: var(border);
+}
+
+.FilterSection{
+  color: #ff5e00;
+  text-align: right;
+  font-style: oblique;
+ 
+
+}
+
+.FilterBox{
+
+}
+
+
+.FilterButton{
+
+}
+
+.SelectedFilter{
+  color: rgb(253, 25, 25);
+  
+}
+
+.RecipeLink{
+  font-weight: bold;
+  font-size: large;
+  color: rgb(90, 157, 63);
+  font-style: oblique; border: #000000;
+
+}
+
+.RecipeName{
+  font-style: oblique;
+  font-size: x-large;
+  font-weight: bold;
+  color: #ff5e00;
+
+}
+
+.Author{
+
+}
+
+.RecipeImageContainer{
+
+}
+
+.RecipeImg{
+  box-sizing: border-box; border-color: #ff3c00; border-radius: 50px;
+width: 200px
+
+
+}
+
+.Attribution{
+
+}
+
+.TimeToCook{
+color: #ff3c00;
+
+}
+
+.Servings{
+  color: #ff3c00;
+
+}
+
+.Dietary{
+  color: #ff3c00;
+
+}
+
