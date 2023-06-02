@@ -1,0 +1,568 @@
+nav {
+    cursor: move;
+    background-color: aqua;
+    color: blue;
+    font-family: monospace;
+    transition: ease;
+}
+
+.hover-cursor {
+    cursor: pointer;
+  }
+
+
+#heading {
+    position: relative;
+    bottom: 150px;
+    left: 600px;
+
+  }
+
+p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 10px 0;
+    padding: 20;
+}
+
+.circle {
+    background-color: rgb(178, 255, 190);
+    border-radius: 20px;
+    width: 200px;
+    height: 25px;
+    animation-name: rotate;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+  }
+  
+
+  
+  .circle:hover {
+    animation-play-state: running;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+
+  #loading-container-2 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: bold;
+    height: 100vh;
+    cursor: pointer;
+  }
+
+/* next shape */
+
+#load-throbber {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #eee;
+  border-top-color: #dffaec;
+  animation: spin 1s infinite linear;
+}
+  
+.square {
+    background-color: rgb(198, 250, 42);
+    border-radius: 20px;
+    width: 180px;
+    height: 10px;
+    animation-name: rotate;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+  }
+
+  .square:hover {
+    animation-play-state: running;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* next shape */
+
+  .red {
+    background-color: rgb(252, 19, 19);
+    border-radius: 20px;
+    width: 500px;
+    height: 20px;
+    animation-name: rotate;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    position: absolute;
+    top: 80%;
+    left: 60%;
+  }
+
+  .red:hover {
+    animation-play-state: running;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* next shape */
+
+  .pink {
+    background-color: rgb(252, 19, 186);
+    border-radius: 20px;
+    width: 600px;
+    height: 10px;
+    animation-name: rotate;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+  }
+
+  .pink:hover {
+    animation-play-state: running;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+    /* next shape */
+
+  .blue {
+    background-color: rgb(4, 0, 255);
+    border-radius: 20px;
+    width: 280px;
+    height: 10px;
+    animation-name: rotate;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+  }
+
+  .blue:hover {
+    animation-play-state: running;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+    /* next shape */
+
+    .purple {
+        background-color: rgb(179, 0, 255);
+        border-radius: 20px;
+        width: 100px;
+        height: 10px;
+        animation-name: rotate;
+        animation-duration: 1.8s;
+        animation-iteration-count: infinite;
+        animation-play-state: paused;
+        position: absolute;
+        top: 17%;
+        left: 85%;
+      }
+    
+      .purple:hover {
+        animation-play-state: running;
+      }
+      
+      @keyframes rotate {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+          /* next shape */
+
+    .orange {
+        background-color: rgb(255, 123, 0);
+        border-radius: 20px;
+        width: 100px;
+        height: 30px;
+        animation-name: rotate;
+        animation-duration: 1.8s;
+        animation-iteration-count: infinite;
+        animation-play-state: paused;
+        position: absolute;
+        top: 25%;
+        left: 35%;
+      }
+    
+      .orange:hover {
+        animation-play-state: running;
+      }
+      
+      @keyframes rotate {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+                /* next shape */
+
+    .green {
+        background-color: rgb(3, 184, 36);
+        border-radius: 20px;
+        width: 12px;
+        height: 300px;
+        animation-name: rotate;
+        animation-duration: 1.8s;
+        animation-iteration-count: infinite;
+        animation-play-state: paused;
+        position: absolute;
+        top: 35%;
+        left: 90%;
+      }
+    
+      .green:hover {
+        animation-play-state: running;
+      }
+      
+      @keyframes rotate {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+                      /* next shape */
+
+    .yellow {
+        background-color: rgb(224, 212, 0);
+        border-radius: 20px;
+        width: 20px;
+        height: 250px;
+        animation-name: rotate;
+        animation-duration: 1.8s;
+        animation-iteration-count: infinite;
+        animation-play-state: paused;
+        position: absolute;
+        top: 35%;
+        left: 33%;
+      }
+    
+      .yellow:hover {
+        animation-play-state: running;
+      }
+      
+      @keyframes rotate {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+                            /* next shape */
+
+    .white {
+        background-color: rgb(0, 170, 255);
+        border-radius: 20px;
+        width: 200px;
+        height: 50px;
+        animation-name: rotate;
+        animation-duration: 1.8s;
+        animation-iteration-count: infinite;
+        animation-play-state: paused;
+        position: absolute;
+        top: 15%;
+        left: 25%;
+      }
+    
+      .white:hover {
+        animation-play-state: running;
+      }
+      
+      @keyframes rotate {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+                                  /* next shape */
+
+    .grey {
+        background-color: rgb(145, 171, 247);
+        border-radius: 20px;
+        width: 100px;
+        height: 10px;
+        animation-name: rotate;
+        animation-duration: 1.8s;
+        animation-iteration-count: infinite;
+        animation-play-state: paused;
+        position: absolute;
+        top: 54%;
+        left: 40%;
+      }
+    
+      .grey:hover {
+        animation-play-state: running;
+      }
+      
+      @keyframes rotate {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+  #load-throbber-1 {
+    display: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    border: 5px solid #eee;
+    border-top-color: #ff0000;
+    animation: spin 3s infinite linear;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  #load-throbber-2 {
+    display: none;
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    border:  solid #0040ff;
+    border-top-color:#000000;
+    animation: spin 6s infinite;
+    position: absolute;
+    top: 70%;
+    left: 60%;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  #load-throbber-3 {
+    display: none;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #000000;
+    border-top-color: #ff00e1;
+    animation: spin 1s infinite linear;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  #load-throbber-4 {
+    display: none;
+    width: 10px;
+    height: 400px;
+    border-radius: 50%;
+    border: 5px solid #ff0000;
+    animation: spin 5s infinite linear;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border-style:double;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  #load-throbber-5 {
+    display: none;
+    width: 90px;
+    height: 90px;
+    border-radius: 20%;
+    border: 5px solid #aa00ff;
+    border-top-color: #000000;
+    animation: spin 1s infinite reverse;
+    position: absolute;
+    top: 17%;
+    left: 85%;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  #load-throbber-6 {
+    display: none;
+    width: 1px;
+    height: 2000px;
+    border-radius: 110%;
+    border: 2px solid #ff9d00;
+    border-top-color: 5px #000000;
+    animation: spin 10s infinite linear;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  #load-throbber-7 {
+    display: none;
+    width: 160px;
+    height: 160px;
+    border-radius: 10%;
+    border: 20px solid #12a801;
+    border-top-color: 10px #000000;
+    animation: spin 10s infinite linear;
+    position: absolute;
+    top: 35%;
+    left: 80%;
+    border-style: inset;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  #load-throbber-8 {
+    display: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    border-width: 20px;
+    border: 20px solid #fffb00;
+    border-bottom: #000000;
+    animation: spin 12s infinite linear;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  #load-throbber-9 {
+    display: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid #ffffff;
+    border-top: #000000;
+    border-top-color: 100px #000000;
+    animation: spin 1s infinite;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  #load-throbber-10 {
+    display: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    border: 20px solid #faea08;
+    border-bottom: #ff9d00;
+    border-style: double
+    animation: spin 12s infinite linear;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
